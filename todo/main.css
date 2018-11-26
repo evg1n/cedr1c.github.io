@@ -2,7 +2,7 @@ html{
     height: 100%;
 }
 body{
-    background-image: url(https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg);
+    background-image: url(background.jpeg);
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@ body{
 
 .jumbotron.text-center{
     font-family: 'Montserrat', sans-serif;
-    background-image: url(https://images.pexels.com/photos/3299/postit-scrabble-to-do.jpg);
+    background-image: url(header.jpg);
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
