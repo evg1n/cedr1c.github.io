@@ -17,11 +17,9 @@ function createListElement() {
     var p = document.createElement("p");
     li.appendChild(p);
     p.appendChild(document.createTextNode(userInput.value));
-    p.setAttribute("class", "float-left");
-    p.setAttribute("style", "margin-right: 3rem");
     li.appendChild(button);
     li.setAttribute("class", "list-group-item action");
-    button.setAttribute("class", "btn btn-outline-danger float-right vertical-center deleteButton");
+    button.setAttribute("class", "btn btn-outline-danger float-right deleteButton");
     button.appendChild(document.createTextNode("X"));
     button.onclick = removeParent;
     ul.appendChild(li);
