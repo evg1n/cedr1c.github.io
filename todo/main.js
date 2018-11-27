@@ -21,7 +21,6 @@ function createListElement() {
     p.setAttribute("style", "margin-right: 3rem");
     li.appendChild(button);
     li.setAttribute("class", "list-group-item action");
-    li.setAttribute("style", "overflow: hidden");
     button.setAttribute("class", "btn btn-outline-danger float-right vertical-center deleteButton");
     button.appendChild(document.createTextNode("X"));
     button.onclick = removeParent;
