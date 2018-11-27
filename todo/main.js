@@ -14,10 +14,15 @@ function inputLength() {
 function createListElement() {
     var li = document.createElement("li");
     var button = document.createElement("button");
-    li.appendChild(document.createTextNode(userInput.value));
+    var p = document.createElement("p");
+    li.appendChild(p);
+    p.appendChild(document.createTextNode(userInput.value));
+    p.setAttribute("class", "float-left");
+    p.setAttribute("style", "margin-right: 3rem");
     li.appendChild(button);
     li.setAttribute("class", "list-group-item action");
-    button.setAttribute("class", "btn btn-outline-danger float-right deleteButton");
+    li.setAttribute("style", "overflow: hidden");
+    button.setAttribute("class", "btn btn-outline-danger float-right vertical-center deleteButton");
     button.appendChild(document.createTextNode("X"));
     button.onclick = removeParent;
     ul.appendChild(li);
